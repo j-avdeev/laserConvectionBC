@@ -1,5 +1,8 @@
 Forked from [laserConvectionBC by Tobias Holzmann](https://bitbucket.org/shor-ty/laserconvectionbc/src)
 
+Works fine on OpenFOAM.org (>=7). For details use [testCase](https://github.com/j-avdeev/LaserCase)
+
+
 # README #
 
 This README includes the steps which are necessary to get this application up and running.
