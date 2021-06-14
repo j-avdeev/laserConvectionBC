@@ -1185,7 +1185,8 @@ void Foam::laserConvectionFvPatchField<Type>::write(Ostream& os) const
     }
 
     //- Write face values
-    this->writeEntry("value", os);
+//    this->writeEntry("value", os); // old.OpenFOAM.org (<=6)
+    writeEntry(os, "value", this); 	 // OpenFOAM.org (>=7)
 
 }
 
