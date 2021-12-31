@@ -617,13 +617,14 @@ Foam::laserConvectionFvPatchField<Type>::laserConvectionFvPatchField
     updateCoeffs();
 }
 
-
+/*
 template<class Type>
 Foam::laserConvectionFvPatchField<Type>::laserConvectionFvPatchField
 (
     const laserConvectionFvPatchField<Type>& ptf
 )
 :
+// this function is deleted in OF 9.x
     mixedFvPatchField<Type>(ptf),
     nSources_(ptf.nSources_),
     reducedCoeff_(ptf.reducedCoeff_),
@@ -667,7 +668,7 @@ Foam::laserConvectionFvPatchField<Type>::laserConvectionFvPatchField
         Info<< "Constructor 4\n" << endl;
     }
 }
-
+*/
 
 template<class Type>
 Foam::laserConvectionFvPatchField<Type>::laserConvectionFvPatchField
